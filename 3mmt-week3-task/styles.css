@@ -1,0 +1,237 @@
+:root {
+  /* Major colors */
+  --color-grey-light: #d3d3d3; /* Light grey */
+  --color-grey: #808080; /* Standard grey */
+  --color-grey-dark: #404040; /* Dark grey */
+  --color-orange-light: #ff8c00; /* Light orange */
+  --color-orange: #ff6600; /* Standard orange */
+  --color-orange-dark: #cc5200; /* Dark orange */
+
+  /* Neutral colors */
+  --color-white: #ffffff; /* White */
+  --color-black: #000000; /* Black */
+  --color-grey-lightest: #f5f5f5; /* Very light grey */
+  --color-grey-darker: #333333; /* Very dark grey */
+  --color-grey-medium: #c0c0c0; /* Medium grey */
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./Assets/Open_Sans/static/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./Assets/Open_Sans/static/OpenSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./Assets/Open_Sans/static/OpenSans-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+*
+{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  margin:0;
+  padding:0;
+}
+
+.header-section img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.header-section img:hover {
+  transform: perspective(900px) rotateY(15deg) rotateX(7.5deg);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+header ul li a {
+    color: var(--color-grey-darker);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-grey-darker);
+  background-color: var(--color-grey-lightest);
+  margin: 0;
+  min-height: 100vh;
+}
+
+section:first-of-type {
+  padding: 2.5rem 1rem 1.6rem 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+ padding-bottom: 10px;
+}
+
+.header-section section:nth-child(2) {
+  padding-top: 1.5rem;
+}
+
+section.lists {
+  margin: 2.5rem 0 0 0;
+  background-color: var(--color-grey-light);
+  padding: 3rem 1rem;
+  color: var(--color-black);
+}
+
+.lists h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.lists ul {
+  padding-left: 1.2rem;
+}
+
+.lists ul li {
+  margin-bottom: 0.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header-text-container {
+    max-width: 90%;
+  }
+  .header-section {
+    padding: 2rem;
+  }
+
+  section:first-of-type {
+    padding: 1rem;
+  }
+
+  section.lists{
+    padding: 3rem;
+  }
+
+  section.lists h2{
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-text-container {
+    width: 100%;
+  }
+
+  .header-text-container p {
+    font-size: 1rem;
+  }
+
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 4rem 2rem;
+  }
+
+  section.lists {
+    margin: 3rem 0 0 0;
+    background-color: var(--color-grey-light);
+    padding: 3rem 4rem;
+    color: var(--color-black);
+  }
+
+  section.lists h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header-section section:first-of-type {
+    width:100%;
+  }
+
+  .header-section section:nth-child(2) {
+    width: 1200px;
+  }
+
+  .header-section {
+    padding: 3rem 4.5rem;
+  }
+
+  section.lists {
+    padding: 4rem 4.5rem;
+  }
+
+  section.lists h2 {
+    font-size: 1.5rem;
+  }
+  
+}
+@media screen and (min-width: 1440px) {
+    header h1 {
+    font-size: 2.5rem;
+  }
+
+
+  .header-section section:nth-child(2) {
+    width: 1500px;
+  }
+
+  .header-section {
+    padding: 3rem 4rem;
+  }
+
+  section.lists {
+    padding: 5rem;
+  }
+
+  section.lists h2 {
+    font-size: 2rem;
+  }
+  
+}
