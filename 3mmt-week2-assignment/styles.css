@@ -61,9 +61,11 @@ img {
 }
 
 img:hover {
-  transform: perspective(800px) rotateY(15deg) rotateX(7.5deg);
+  transform: perspective(900px) rotateY(15deg) rotateX(7.5deg);
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
 }
+
+
 
 body {
   display: flex;
@@ -129,6 +131,14 @@ header h1 {
   section:first-of-type {
     padding: 1rem;
   }
+
+  section.lists{
+    padding: 3rem;
+  }
+
+  section.lists h2{
+    font-size: 1.7rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -149,6 +159,7 @@ header h1 {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    padding: 4rem 2rem;
   }
 
   section.lists {
