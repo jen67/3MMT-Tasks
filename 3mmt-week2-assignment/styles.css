@@ -1,0 +1,107 @@
+:root {
+  /* Major colors */
+  --color-grey-light: #d3d3d3; /* Light grey */
+  --color-grey: #808080; /* Standard grey */
+  --color-grey-dark: #404040; /* Dark grey */
+  --color-orange-light: #ff8c00; /* Light orange */
+  --color-orange: #ff6600; /* Standard orange */
+  --color-orange-dark: #cc5200; /* Dark orange */
+
+  /* Neutral colors */
+  --color-white: #ffffff; /* White */
+  --color-black: #000000; /* Black */
+  --color-grey-lightest: #f5f5f5; /* Very light grey */
+  --color-grey-darker: #333333; /* Very dark grey */
+  --color-grey-medium: #c0c0c0; /* Medium grey */
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./Assets/Open_Sans/static/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./Assets/Open_Sans/static/OpenSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./Assets/Open_Sans/static/OpenSans-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 0;
+  object-fit: cover;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-grey-darker);
+  background-color: var(--color-grey-lightest);
+  margin: 0;
+  min-height: 100vh;
+}
+
+section:first-of-type {
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+section:nth-child(2) {
+  margin-top: 1.5rem;
+}
+
+section:nth-child(3) {
+  margin: 2.5rem 0 0 0;
+  background-color: var(--color-grey-light);
+  padding: 1.8rem 1rem;
+  color: var(var(--color-black));
+}
+
+section:nth-child(3) h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+section:nth-child(3) ul {
+  padding-left: 1.2rem;
+}
+
+section:nth-child(3) ul li {
+  margin-bottom: 0.3rem;
+}
