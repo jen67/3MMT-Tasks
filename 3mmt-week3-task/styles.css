@@ -56,7 +56,17 @@ h6 {
   padding:0;
 }
 
-.header-section img {
+.heading2{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-grey-dark);
+  margin-bottom: 1rem;
+}
+
+strong{
+  font-size: 0.9rem;
+}
+img {
   max-width: 100%;
   width: 100%;
   display: block;
@@ -64,20 +74,12 @@ h6 {
   transition: transform 0.6s ease, box-shadow 0.6s ease;
 }
 
-.header-section img:hover {
+img:hover {
   transform: perspective(900px) rotateY(15deg) rotateX(7.5deg);
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
 }
 
-header ul li a {
-    color: var(--color-grey-darker);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
+
 
 body {
   display: flex;
@@ -124,6 +126,10 @@ section.lists {
   margin-bottom: 0.3rem;
 }
 
+
+footer{
+  padding: 3rem 1rem;
+}
 @media screen and (min-width: 768px) {
   body {
     font-size: 1.1rem;
@@ -184,6 +190,10 @@ section.lists {
   section.lists h2 {
     font-size: 1.3rem;
   }
+
+  footer{
+    padding: 3rem 2rem;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -210,6 +220,10 @@ section.lists {
   section.lists h2 {
     font-size: 1.5rem;
   }
+
+  footer{
+    padding: 3rem 4.5rem;
+  }
   
 }
 @media screen and (min-width: 1440px) {
@@ -232,6 +246,10 @@ section.lists {
 
   section.lists h2 {
     font-size: 2rem;
+  }
+  
+  footer{
+    padding: 3rem 4rem;
   }
   
 }
